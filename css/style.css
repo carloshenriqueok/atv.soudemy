@@ -96,6 +96,10 @@ header nav ul li a.botao {
 main section.banner {
     text-align: center;
 }
+main section.banner img{
+    width: 80%;
+    max-width: 800px;
+}
 main section.banner h2 {
     font-size: 2.4rem;
     margin: 1vw 0 1vw 0;
@@ -179,6 +183,7 @@ main section.build p.terceiro {
 main section.build div.dividir {
     display: flex;
     align-items: center;
+    text-align: left;
 }
 main section.build div.dividir p.imagem {
     width: 50%;
@@ -189,12 +194,10 @@ main section.build div.dividir div h3{
     width: 50%;
     font-size: 1.5rem;
     margin: 0 0 1vw 0;
-    text-align: left;
 }
 main section.build div.dividir div p {
     color: #888888;
     font-size: 1.3rem;
-    text-align: left;
     width: 35%;
 }
 
@@ -223,3 +226,59 @@ footer ul li {
     color: #888888;
     font-size: 1.3rem;
 }
+@media (max-width: 600px) {
+    header{
+        display: block;
+        text-align: center;
+    }
+    header h1{
+        margin: 3vw 0 3vw 0;
+    }
+    header nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header nav ul li{
+        width: 40%;
+        margin: 3vw 0 3vw 0;
+    }
+    
+    main section.banner h2{
+        margin: 0 5vw 3vw 5vw;
+    }
+
+    main section.products p.segundo{
+        margin: 0 1vw 0 1vw;
+    }
+    main section.products ul li{
+        width: 85%;
+    }
+
+    main section.build div.dividir{
+        display: block;
+        text-align: center;
+    }
+    main section.build div.dividir div h3{
+        width: 85%;
+        margin: 0 5vw 0 5vw;
+    }
+    main section.build div.dividir p.imagem img{
+        width: 85vw;
+        margin: 5vw 0 5vw 0;
+    }
+    main section.build div.dividir div p{
+        width: 85%;
+        margin: 0 5vw 0 5vw;
+    }
+    main section.build p.terceiro{
+        margin: 1vw 5vw 1vw 5vw;
+    }
+    footer{
+        display: block;
+        text-align: center;
+    }
+    footer ul{
+        margin: 2vw 0 2vw 0;
+        justify-content: center;
+    }
+  }     
